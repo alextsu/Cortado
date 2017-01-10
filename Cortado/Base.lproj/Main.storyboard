@@ -104,7 +104,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum. Nullam mattis fermentum libero." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff6-qW-nWI">
-                                                <rect key="frame" x="25" y="25" width="208" height="67"/>
+                                                <rect key="frame" x="25" y="20" width="213" height="77"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -112,12 +112,12 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.97647058819999999" green="0.74901960779999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="ff6-qW-nWI" secondAttribute="bottom" constant="25" id="0vi-ou-aOw"/>
-                                            <constraint firstItem="794-oz-BPm" firstAttribute="leading" secondItem="ff6-qW-nWI" secondAttribute="trailing" constant="25" id="WXA-O5-Xyd"/>
+                                            <constraint firstAttribute="bottom" secondItem="ff6-qW-nWI" secondAttribute="bottom" constant="20" id="0vi-ou-aOw"/>
+                                            <constraint firstItem="794-oz-BPm" firstAttribute="leading" secondItem="ff6-qW-nWI" secondAttribute="trailing" constant="20" id="WXA-O5-Xyd"/>
                                             <constraint firstItem="794-oz-BPm" firstAttribute="top" secondItem="Nzk-kC-yWp" secondAttribute="top" id="Yt1-2j-26k"/>
                                             <constraint firstAttribute="trailing" secondItem="794-oz-BPm" secondAttribute="trailing" id="ZYL-IB-dKm"/>
                                             <constraint firstItem="ff6-qW-nWI" firstAttribute="leading" secondItem="Nzk-kC-yWp" secondAttribute="leading" constant="25" id="ac5-yC-PAj"/>
-                                            <constraint firstItem="ff6-qW-nWI" firstAttribute="top" secondItem="Nzk-kC-yWp" secondAttribute="top" constant="25" id="hax-NA-3jE"/>
+                                            <constraint firstItem="ff6-qW-nWI" firstAttribute="top" secondItem="Nzk-kC-yWp" secondAttribute="top" constant="20" id="hax-NA-3jE"/>
                                             <constraint firstAttribute="bottom" secondItem="794-oz-BPm" secondAttribute="bottom" id="iDa-E5-oZS"/>
                                         </constraints>
                                     </view>

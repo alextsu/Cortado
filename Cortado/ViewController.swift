@@ -38,8 +38,27 @@ class ViewController: UIViewController {
         
         
         navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "nevis", size: 16)!,  NSForegroundColorAttributeName :cortadoNavy]
-
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
         
+        
+        let bioTitle = "HOST"
+        
+        let bioLabelString : String = bioTitle + "\n" + "This is my bio. It contains a ton of information about me. This is my bio. I like board games, spicy food, basketball."
+        
+        var mutableBio = NSMutableAttributedString()
+        mutableBio = NSMutableAttributedString(string: bioLabelString, attributes: [NSFontAttributeName:UIFont(name: "lato-regular", size: 11)!])
+
+        mutableBio.addAttribute(NSForegroundColorAttributeName, value: cortadoGreen, range: NSRange(location:0,length:bioTitle.characters.count))
+        mutableBio.addAttribute(NSFontAttributeName, value: UIFont(name:"nevis", size: 7) as Any, range: NSRange(location:0,length:bioTitle.characters.count))
+        
+        
+         let paragraphStyle = NSMutableParagraphStyle()
+         paragraphStyle.lineSpacing = 2.5
+         mutableBio.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, mutableBio.length))
+ 
+        
+        bioLabel.attributedText = mutableBio
 
         
     }
