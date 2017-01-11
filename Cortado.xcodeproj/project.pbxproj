@@ -18,6 +18,7 @@
 		209C90841E2464330001FCDB /* nevis.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 209C90831E2464330001FCDB /* nevis.ttf */; };
 		209C90861E2464590001FCDB /* lato-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 209C90851E2464590001FCDB /* lato-regular.ttf */; };
 		209C90881E2476390001FCDB /* alex-tsu@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 209C90871E2476390001FCDB /* alex-tsu@2x.jpg */; };
+		20A6614C1E25CA2300BEBCE1 /* AttendeePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A6614B1E25CA2300BEBCE1 /* AttendeePhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		209C90831E2464330001FCDB /* nevis.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nevis.ttf; sourceTree = "<group>"; };
 		209C90851E2464590001FCDB /* lato-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lato-regular.ttf"; sourceTree = "<group>"; };
 		209C90871E2476390001FCDB /* alex-tsu@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "alex-tsu@2x.jpg"; sourceTree = "<group>"; };
+		20A6614B1E25CA2300BEBCE1 /* AttendeePhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendeePhotoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				209C90791E2462780001FCDB /* Info.plist */,
 				209482AA1E257991005FEFA4 /* CoffeeLocation.swift */,
 				209482AC1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift */,
+				20A6614B1E25CA2300BEBCE1 /* AttendeePhotoView.swift */,
 			);
 			path = Cortado;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				209482AB1E257991005FEFA4 /* CoffeeLocation.swift in Sources */,
+				20A6614C1E25CA2300BEBCE1 /* AttendeePhotoView.swift in Sources */,
 				209C90701E2462780001FCDB /* ViewController.swift in Sources */,
 				209C90821E2462A40001FCDB /* Colors.swift in Sources */,
 				209C906E1E2462780001FCDB /* AppDelegate.swift in Sources */,

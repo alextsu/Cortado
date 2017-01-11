@@ -92,17 +92,17 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SD-VK-t52">
-                                        <rect key="frame" x="0.0" y="151" width="375" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="151" width="375" height="118"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01w-co-JnJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="117.5" height="117.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="01w-co-JnJ" secondAttribute="height" multiplier="1:1" id="SBn-7R-xwZ"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum. Nullam mattis fermentum libero." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGi-Uv-Xez">
-                                                <rect key="frame" x="142.5" y="25" width="212.5" height="67.5"/>
+                                                <rect key="frame" x="143" y="25" width="212" height="68"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -157,11 +157,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqq-Xa-g76">
-                                        <rect key="frame" x="0.0" y="268.5" width="375" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="269" width="375" height="117"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum. Nullam mattis fermentum libero." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pro-bt-Ved">
-                                        <rect key="frame" x="25" y="293.5" width="325" height="67.5"/>
+                                        <rect key="frame" x="25" y="294" width="325" height="67"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>

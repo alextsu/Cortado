@@ -29,6 +29,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     
+    let numberOfParticipants = 8
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +53,22 @@ class ViewController: UIViewController {
         
         //
         
+        for index in 0...(numberOfParticipants-1) {
+            
+            if(index != 0) {
+            let attendeePhotoView = AttendeePhotoView(frame: CGRect(x: 6 + (35 * index), y: 10, width: 35, height: 35), headshot: nil)
+                attendees.addSubview(attendeePhotoView)
+            }
+            else {
+            let attendeePhotoView = AttendeePhotoView(frame: CGRect(x: 6 + (35 * index), y: 10, width: 35, height: 35), headshot: UIImage(named: "alex-tsu.jpg"))
+                attendees.addSubview(attendeePhotoView)
+            }
+           
         
+        }
+        
+        
+        //
         
         let coffeeLocation = CoffeeLocation(title: "Kobrick's Coffee", coordinate: CLLocationCoordinate2D(latitude: 40.740359, longitude: -74.005634), address: "24 9th Ave", city : "New York", state : "NY", rating : 8.4, url : NSURL(string: "https://foursquare.com/item/5740e323498e7f881500e38f"))
         
