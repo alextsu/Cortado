@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209482AB1E257991005FEFA4 /* CoffeeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209482AA1E257991005FEFA4 /* CoffeeLocation.swift */; };
+		209482AD1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209482AC1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift */; };
 		209C906E1E2462780001FCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C906D1E2462780001FCDB /* AppDelegate.swift */; };
 		209C90701E2462780001FCDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C906F1E2462780001FCDB /* ViewController.swift */; };
 		209C90731E2462780001FCDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209C90711E2462780001FCDB /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		209482AA1E257991005FEFA4 /* CoffeeLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeLocation.swift; sourceTree = "<group>"; };
+		209482AC1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMapViewExtension.swift; sourceTree = "<group>"; };
 		209C906A1E2462780001FCDB /* Cortado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cortado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209C906D1E2462780001FCDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209C906F1E2462780001FCDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				209C90741E2462780001FCDB /* Assets.xcassets */,
 				209C90761E2462780001FCDB /* LaunchScreen.storyboard */,
 				209C90791E2462780001FCDB /* Info.plist */,
+				209482AA1E257991005FEFA4 /* CoffeeLocation.swift */,
+				209482AC1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift */,
 			);
 			path = Cortado;
 			sourceTree = "<group>";
@@ -151,9 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209482AB1E257991005FEFA4 /* CoffeeLocation.swift in Sources */,
 				209C90701E2462780001FCDB /* ViewController.swift in Sources */,
 				209C90821E2462A40001FCDB /* Colors.swift in Sources */,
 				209C906E1E2462780001FCDB /* AppDelegate.swift in Sources */,
+				209482AD1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +321,7 @@
 				209C907E1E2462780001FCDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

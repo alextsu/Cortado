@@ -33,9 +33,23 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kez-c1-Hfd">
                                 <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTENDEES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IES-GJ-qD9">
+                                        <rect key="frame" x="10" y="0.0" width="340" height="9"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="9" id="nnO-QS-Eoi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="nevis-Bold" family="nevis" pointSize="7"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="IES-GJ-qD9" firstAttribute="leading" secondItem="kez-c1-Hfd" secondAttribute="leading" constant="10" id="BmU-oo-3Nf"/>
+                                    <constraint firstItem="IES-GJ-qD9" firstAttribute="top" secondItem="kez-c1-Hfd" secondAttribute="top" id="Efk-Pm-eca"/>
                                     <constraint firstAttribute="height" constant="50" id="JjJ-SS-hSj"/>
+                                    <constraint firstAttribute="trailing" secondItem="IES-GJ-qD9" secondAttribute="trailing" constant="25" id="QAY-fo-HLh"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGJ-KF-qbd">
@@ -64,7 +78,18 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQr-d0-Cu8">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                        <subviews>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PtL-iY-vTx">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                            </mapView>
+                                        </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="PtL-iY-vTx" secondAttribute="trailing" id="NKd-zb-EKQ"/>
+                                            <constraint firstItem="PtL-iY-vTx" firstAttribute="top" secondItem="nQr-d0-Cu8" secondAttribute="top" id="bcU-bt-Ft1"/>
+                                            <constraint firstItem="PtL-iY-vTx" firstAttribute="leading" secondItem="nQr-d0-Cu8" secondAttribute="leading" id="nZl-r7-mch"/>
+                                            <constraint firstAttribute="bottom" secondItem="PtL-iY-vTx" secondAttribute="bottom" id="rhf-4q-eHh"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SD-VK-t52">
                                         <rect key="frame" x="0.0" y="151" width="375" height="117.5"/>
@@ -76,10 +101,20 @@
                                                     <constraint firstAttribute="width" secondItem="01w-co-JnJ" secondAttribute="height" multiplier="1:1" id="SBn-7R-xwZ"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum. Nullam mattis fermentum libero." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGi-Uv-Xez">
+                                                <rect key="frame" x="142.5" y="25" width="212.5" height="67.5"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.46666666670000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="01w-co-JnJ" secondAttribute="bottom" id="8UL-VW-a0R"/>
+                                            <constraint firstItem="QGi-Uv-Xez" firstAttribute="leading" secondItem="01w-co-JnJ" secondAttribute="trailing" constant="25" id="DUz-hB-MF0"/>
+                                            <constraint firstAttribute="bottom" secondItem="QGi-Uv-Xez" secondAttribute="bottom" constant="25" id="FoY-vp-Olh"/>
+                                            <constraint firstItem="QGi-Uv-Xez" firstAttribute="top" secondItem="2SD-VK-t52" secondAttribute="top" constant="25" id="I8x-Di-L4y"/>
+                                            <constraint firstAttribute="trailing" secondItem="QGi-Uv-Xez" secondAttribute="trailing" constant="20" id="Sh2-vh-STP"/>
                                             <constraint firstItem="01w-co-JnJ" firstAttribute="height" secondItem="2SD-VK-t52" secondAttribute="height" id="lnM-t5-IiX"/>
                                             <constraint firstItem="01w-co-JnJ" firstAttribute="leading" secondItem="2SD-VK-t52" secondAttribute="leading" id="nOq-Ug-eW6"/>
                                         </constraints>
@@ -125,11 +160,19 @@
                                         <rect key="frame" x="0.0" y="268.5" width="375" height="117.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum. Nullam mattis fermentum libero." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pro-bt-Ved">
+                                        <rect key="frame" x="25" y="293.5" width="325" height="67.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="nQr-d0-Cu8" secondAttribute="trailing" id="7Jf-QF-aqL"/>
                                     <constraint firstItem="zqq-Xa-g76" firstAttribute="leading" secondItem="fYP-a9-EiV" secondAttribute="leading" id="CZP-at-Mtl"/>
+                                    <constraint firstItem="Nzk-kC-yWp" firstAttribute="top" secondItem="pro-bt-Ved" secondAttribute="bottom" constant="25" id="Dj1-Vj-6Pt"/>
+                                    <constraint firstItem="pro-bt-Ved" firstAttribute="top" secondItem="2SD-VK-t52" secondAttribute="bottom" constant="25" id="KiL-Tj-rC5"/>
                                     <constraint firstItem="Nzk-kC-yWp" firstAttribute="top" secondItem="zqq-Xa-g76" secondAttribute="bottom" id="NAc-N3-z5b"/>
                                     <constraint firstItem="zqq-Xa-g76" firstAttribute="height" secondItem="fYP-a9-EiV" secondAttribute="height" multiplier="7:30" id="OjZ-LJ-zWp"/>
                                     <constraint firstItem="nQr-d0-Cu8" firstAttribute="height" secondItem="fYP-a9-EiV" secondAttribute="height" multiplier="3:10" id="UqG-Je-00j"/>
@@ -143,7 +186,9 @@
                                     <constraint firstAttribute="trailing" secondItem="2SD-VK-t52" secondAttribute="trailing" id="lW5-aN-Yla"/>
                                     <constraint firstItem="nQr-d0-Cu8" firstAttribute="leading" secondItem="fYP-a9-EiV" secondAttribute="leading" id="lbo-Ta-wHd"/>
                                     <constraint firstAttribute="trailing" secondItem="zqq-Xa-g76" secondAttribute="trailing" id="msi-Is-UZ4"/>
+                                    <constraint firstAttribute="trailing" secondItem="pro-bt-Ved" secondAttribute="trailing" constant="25" id="nDb-12-uUK"/>
                                     <constraint firstItem="2SD-VK-t52" firstAttribute="leading" secondItem="fYP-a9-EiV" secondAttribute="leading" id="sC2-wV-WYR"/>
+                                    <constraint firstItem="pro-bt-Ved" firstAttribute="leading" secondItem="fYP-a9-EiV" secondAttribute="leading" constant="25" id="tSQ-NF-lHj"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -165,11 +210,15 @@
                     <navigationItem key="navigationItem" title="COFFEE W/ ALEX" id="o6N-kl-x0H"/>
                     <connections>
                         <outlet property="attendees" destination="kez-c1-Hfd" id="2vk-c2-1Nf"/>
+                        <outlet property="attendeesLabel" destination="IES-GJ-qD9" id="n4a-3X-M92"/>
                         <outlet property="bio" destination="Nzk-kC-yWp" id="3Dr-ZR-IYS"/>
                         <outlet property="bioLabel" destination="ff6-qW-nWI" id="CJ1-Ju-r9W"/>
+                        <outlet property="descriptionLabel" destination="pro-bt-Ved" id="ziS-Kd-cSO"/>
                         <outlet property="destinationAndTime" destination="2SD-VK-t52" id="oFZ-a5-v2z"/>
                         <outlet property="eventDescription" destination="zqq-Xa-g76" id="WKW-mb-rnr"/>
                         <outlet property="iconSquare" destination="01w-co-JnJ" id="X7P-eA-5Gh"/>
+                        <outlet property="locationLabel" destination="QGi-Uv-Xez" id="YPu-34-TWZ"/>
+                        <outlet property="mapView" destination="PtL-iY-vTx" id="c2f-St-tbv"/>
                         <outlet property="profilePhoto" destination="eUf-mQ-qzi" id="j2W-lT-pDl"/>
                         <outlet property="signUp" destination="Io5-Ao-FT8" id="ZSM-Mu-YtK"/>
                     </connections>
