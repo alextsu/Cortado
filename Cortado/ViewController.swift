@@ -11,7 +11,7 @@ import MapKit
 import Foundation
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var iconSquare: UIView!
     @IBOutlet weak var destinationAndTime: UIView!
     @IBOutlet weak var eventDescription: UIView!
@@ -35,6 +35,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // FONT SIZE
+        
+        var fontSizeModifier : Float
+        
+        print (UIDevice.current.modelName)
+        
+        if UIDevice.current.modelName.contains("iPhone 5") == true {
+            fontSizeModifier = 2
+        }
+        else {
+            fontSizeModifier = 0
+        }
+        
+        
+        //
+        
         iconSquare.backgroundColor = cortadoLightBrown
         destinationAndTime.backgroundColor = cortadoNavy
         eventDescription.backgroundColor = cortadoLightBlue
@@ -56,15 +72,13 @@ class ViewController: UIViewController {
         for index in 0...(numberOfParticipants-1) {
             
             if(index != 0) {
-            let attendeePhotoView = AttendeePhotoView(frame: CGRect(x: 6 + (35 * index), y: 10, width: 35, height: 35), headshot: nil)
+                let attendeePhotoView = AttendeePhotoView(frame: CGRect(x: 6 + (35 * index), y: 10, width: 35, height: 35), headshot: nil)
                 attendees.addSubview(attendeePhotoView)
             }
             else {
-            let attendeePhotoView = AttendeePhotoView(frame: CGRect(x: 6 + (35 * index), y: 10, width: 35, height: 35), headshot: UIImage(named: "alex-tsu.jpg"))
+                let attendeePhotoView = AttendeePhotoView(frame: CGRect(x: 6 + (35 * index), y: 10, width: 35, height: 35), headshot: UIImage(named: "alex-tsu.jpg"))
                 attendees.addSubview(attendeePhotoView)
             }
-           
-        
         }
         
         
@@ -76,7 +90,7 @@ class ViewController: UIViewController {
         mapView.addAnnotation(coffeeLocation)
         centerMapOnLocation(location: CLLocation(latitude: coffeeLocation.coordinate.latitude, longitude: coffeeLocation.coordinate.longitude))
         
-
+        
         //
         
         
@@ -85,16 +99,16 @@ class ViewController: UIViewController {
         let bioLabelString : String = bioTitle + "\n" + "This is my bio. It contains a ton of information about me. This is my bio. I like board games, spicy food, basketball."
         
         var mutableBio = NSMutableAttributedString()
-        mutableBio = NSMutableAttributedString(string: bioLabelString, attributes: [NSFontAttributeName:UIFont(name: "lato-regular", size: 11)!])
-
+        mutableBio = NSMutableAttributedString(string: bioLabelString, attributes: [NSFontAttributeName:UIFont(name: "lato-regular", size: CGFloat( 11 - fontSizeModifier))!])
+        
         mutableBio.addAttribute(NSForegroundColorAttributeName, value: cortadoGreen, range: NSRange(location:0,length:bioTitle.characters.count))
         mutableBio.addAttribute(NSFontAttributeName, value: UIFont(name:"nevis", size: 7.5) as Any, range: NSRange(location:0,length:bioTitle.characters.count))
         
         
-         let paragraphStyle = NSMutableParagraphStyle()
-         paragraphStyle.lineSpacing = 2.5
-         mutableBio.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, mutableBio.length))
- 
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 2.5
+        mutableBio.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, mutableBio.length))
+        
         bioLabel.attributedText = mutableBio
         
         
@@ -105,7 +119,7 @@ class ViewController: UIViewController {
         let descriptionLabelString : String = descriptionTitle + "\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente interdum rutrum sodales. Nullam mattis fermentum libero, non volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing."
         
         var mutableDescription = NSMutableAttributedString()
-        mutableDescription = NSMutableAttributedString(string: descriptionLabelString, attributes: [NSFontAttributeName:UIFont(name: "lato-regular", size: 11)!, NSForegroundColorAttributeName :cortadoNavy])
+        mutableDescription = NSMutableAttributedString(string: descriptionLabelString, attributes: [NSFontAttributeName:UIFont(name: "lato-regular", size: CGFloat(11 - fontSizeModifier))!, NSForegroundColorAttributeName :cortadoNavy])
         
         mutableDescription.addAttribute(NSForegroundColorAttributeName, value: UIColor.white, range: NSRange(location:0,length:descriptionTitle.characters.count))
         mutableDescription.addAttribute(NSFontAttributeName, value: UIFont(name:"nevis", size: 7.5) as Any, range: NSRange(location:0,length:descriptionTitle.characters.count))
@@ -113,40 +127,39 @@ class ViewController: UIViewController {
         mutableDescription.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, mutableDescription.length))
         
         descriptionLabel.attributedText = mutableDescription
-    
+        
         
         //
         
         let locationTitle = "LOCATION & TIME"
         
-        
         if let locationStoreName = coffeeLocation.title?.uppercased() {
-        
-        let locationAddress = coffeeLocation.address + ", " + coffeeLocation.city + ", " + coffeeLocation.state
-        let locationTime = "5:30 PM, Monday, January 9"
-        let locationLabelString = locationTitle + "\n" + locationStoreName + "\n\(locationAddress)\n\(locationTime)"
-        
-        var mutableLocation = NSMutableAttributedString()
-        mutableLocation = NSMutableAttributedString(string: locationLabelString, attributes: [NSFontAttributeName:UIFont(name: "lato-regular", size: 11)!, NSForegroundColorAttributeName :UIColor.white])
-        mutableLocation.addAttribute(NSForegroundColorAttributeName, value: cortadoGreen, range: NSRange(location:0,length:locationTitle.characters.count))
-        mutableLocation.addAttribute(NSFontAttributeName, value: UIFont(name:"nevis", size: 7.5) as Any, range: NSRange(location:0,length:locationTitle.characters.count))
-        
-        mutableLocation.addAttribute(NSFontAttributeName, value: UIFont(name:"nevis", size: 15) as Any, range: NSRange(location:locationTitle.characters.count+1,length:(locationStoreName.characters.count)))
-        
-        mutableLocation.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, mutableLocation.length))
-   
-        locationLabel.attributedText = mutableLocation
+            
+            let locationAddress = coffeeLocation.address + ", " + coffeeLocation.city + ", " + coffeeLocation.state
+            let locationTime = "5:30 PM, Monday, January 9"
+            let locationLabelString = locationTitle + "\n" + locationStoreName + "\n\(locationAddress)\n\(locationTime)"
+            
+            var mutableLocation = NSMutableAttributedString()
+            mutableLocation = NSMutableAttributedString(string: locationLabelString, attributes: [NSFontAttributeName:UIFont(name: "lato-regular", size: CGFloat(11 - fontSizeModifier))!, NSForegroundColorAttributeName :UIColor.white])
+            mutableLocation.addAttribute(NSForegroundColorAttributeName, value: cortadoGreen, range: NSRange(location:0,length:locationTitle.characters.count))
+            mutableLocation.addAttribute(NSFontAttributeName, value: UIFont(name:"nevis", size: 7.5) as Any, range: NSRange(location:0,length:locationTitle.characters.count))
+            
+            mutableLocation.addAttribute(NSFontAttributeName, value: UIFont(name:"nevis", size: CGFloat(15 - 2 * fontSizeModifier)) as Any, range: NSRange(location:locationTitle.characters.count+1,length:(locationStoreName.characters.count)))
+            
+            mutableLocation.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, mutableLocation.length))
+            
+            locationLabel.attributedText = mutableLocation
         }
-        //
-           }
-
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func signUpClicked(_ sender: Any) {
     
+    @IBAction func signUpClicked(_ sender: Any) {
+        
     }
     
     let regionRadius: CLLocationDistance = 1000
@@ -155,6 +168,6 @@ class ViewController: UIViewController {
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
     }
-
+    
 }
 

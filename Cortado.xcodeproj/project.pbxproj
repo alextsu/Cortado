@@ -10,6 +10,7 @@
 		206129551E268EE50024A1F6 /* coffee-cup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206129541E268EE50024A1F6 /* coffee-cup@2x.png */; };
 		2061295C1E2690D70024A1F6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061295B1E2690D70024A1F6 /* Person.swift */; };
 		2061295E1E2692760024A1F6 /* CoffeeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061295D1E2692760024A1F6 /* CoffeeEvent.swift */; };
+		206129601E2730F80024A1F6 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061295F1E2730F80024A1F6 /* UIDeviceExtension.swift */; };
 		209482AB1E257991005FEFA4 /* CoffeeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209482AA1E257991005FEFA4 /* CoffeeLocation.swift */; };
 		209482AD1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209482AC1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift */; };
 		209C906E1E2462780001FCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C906D1E2462780001FCDB /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 		206129541E268EE50024A1F6 /* coffee-cup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-cup@2x.png"; sourceTree = "<group>"; };
 		2061295B1E2690D70024A1F6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		2061295D1E2692760024A1F6 /* CoffeeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeEvent.swift; sourceTree = "<group>"; };
+		2061295F1E2730F80024A1F6 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		209482AA1E257991005FEFA4 /* CoffeeLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeLocation.swift; sourceTree = "<group>"; };
 		209482AC1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMapViewExtension.swift; sourceTree = "<group>"; };
 		209C906A1E2462780001FCDB /* Cortado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cortado.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			children = (
 				209482AC1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift */,
 				209C90811E2462A40001FCDB /* Colors.swift */,
+				2061295F1E2730F80024A1F6 /* UIDeviceExtension.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				209482AB1E257991005FEFA4 /* CoffeeLocation.swift in Sources */,
 				20A6614C1E25CA2300BEBCE1 /* AttendeePhotoView.swift in Sources */,
 				209C90701E2462780001FCDB /* ViewController.swift in Sources */,
+				206129601E2730F80024A1F6 /* UIDeviceExtension.swift in Sources */,
 				209C90821E2462A40001FCDB /* Colors.swift in Sources */,
 				2061295C1E2690D70024A1F6 /* Person.swift in Sources */,
 				209C906E1E2462780001FCDB /* AppDelegate.swift in Sources */,

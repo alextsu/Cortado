@@ -101,8 +101,8 @@
                                                     <constraint firstAttribute="width" secondItem="01w-co-JnJ" secondAttribute="height" multiplier="1:1" id="SBn-7R-xwZ"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum. Nullam mattis fermentum libero." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGi-Uv-Xez">
-                                                <rect key="frame" x="143" y="25" width="212" height="68"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum. Nullam mattis fermentum libero." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGi-Uv-Xez">
+                                                <rect key="frame" x="143" y="15" width="212" height="83"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -112,8 +112,8 @@
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="01w-co-JnJ" secondAttribute="bottom" id="8UL-VW-a0R"/>
                                             <constraint firstItem="QGi-Uv-Xez" firstAttribute="leading" secondItem="01w-co-JnJ" secondAttribute="trailing" constant="25" id="DUz-hB-MF0"/>
-                                            <constraint firstAttribute="bottom" secondItem="QGi-Uv-Xez" secondAttribute="bottom" constant="25" id="FoY-vp-Olh"/>
-                                            <constraint firstItem="QGi-Uv-Xez" firstAttribute="top" secondItem="2SD-VK-t52" secondAttribute="top" constant="25" id="I8x-Di-L4y"/>
+                                            <constraint firstAttribute="bottom" secondItem="QGi-Uv-Xez" secondAttribute="bottom" constant="20" id="FoY-vp-Olh"/>
+                                            <constraint firstItem="QGi-Uv-Xez" firstAttribute="top" secondItem="2SD-VK-t52" secondAttribute="top" constant="15" id="I8x-Di-L4y"/>
                                             <constraint firstAttribute="trailing" secondItem="QGi-Uv-Xez" secondAttribute="trailing" constant="20" id="Sh2-vh-STP"/>
                                             <constraint firstItem="01w-co-JnJ" firstAttribute="height" secondItem="2SD-VK-t52" secondAttribute="height" id="lnM-t5-IiX"/>
                                             <constraint firstItem="01w-co-JnJ" firstAttribute="leading" secondItem="2SD-VK-t52" secondAttribute="leading" id="nOq-Ug-eW6"/>
@@ -161,7 +161,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum. Nullam mattis fermentum libero." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pro-bt-Ved">
-                                        <rect key="frame" x="25" y="294" width="325" height="67"/>
+                                        <rect key="frame" x="25" y="289" width="325" height="72"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -172,7 +172,7 @@
                                     <constraint firstAttribute="trailing" secondItem="nQr-d0-Cu8" secondAttribute="trailing" id="7Jf-QF-aqL"/>
                                     <constraint firstItem="zqq-Xa-g76" firstAttribute="leading" secondItem="fYP-a9-EiV" secondAttribute="leading" id="CZP-at-Mtl"/>
                                     <constraint firstItem="Nzk-kC-yWp" firstAttribute="top" secondItem="pro-bt-Ved" secondAttribute="bottom" constant="25" id="Dj1-Vj-6Pt"/>
-                                    <constraint firstItem="pro-bt-Ved" firstAttribute="top" secondItem="2SD-VK-t52" secondAttribute="bottom" constant="25" id="KiL-Tj-rC5"/>
+                                    <constraint firstItem="pro-bt-Ved" firstAttribute="top" secondItem="2SD-VK-t52" secondAttribute="bottom" constant="20" id="KiL-Tj-rC5"/>
                                     <constraint firstItem="Nzk-kC-yWp" firstAttribute="top" secondItem="zqq-Xa-g76" secondAttribute="bottom" id="NAc-N3-z5b"/>
                                     <constraint firstItem="zqq-Xa-g76" firstAttribute="height" secondItem="fYP-a9-EiV" secondAttribute="height" multiplier="7:30" id="OjZ-LJ-zWp"/>
                                     <constraint firstItem="nQr-d0-Cu8" firstAttribute="height" secondItem="fYP-a9-EiV" secondAttribute="height" multiplier="3:10" id="UqG-Je-00j"/>
@@ -232,7 +232,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YZv-4t-NJ0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QrW-cG-DdK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QrW-cG-DdK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
