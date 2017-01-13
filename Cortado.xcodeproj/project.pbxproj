@@ -11,6 +11,8 @@
 		2061295C1E2690D70024A1F6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061295B1E2690D70024A1F6 /* Person.swift */; };
 		2061295E1E2692760024A1F6 /* CoffeeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061295D1E2692760024A1F6 /* CoffeeEvent.swift */; };
 		206129601E2730F80024A1F6 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061295F1E2730F80024A1F6 /* UIDeviceExtension.swift */; };
+		206129641E285ABD0024A1F6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206129631E285ABD0024A1F6 /* SearchViewController.swift */; };
+		206129661E2879C70024A1F6 /* filter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206129651E2879C70024A1F6 /* filter@2x.png */; };
 		209482AB1E257991005FEFA4 /* CoffeeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209482AA1E257991005FEFA4 /* CoffeeLocation.swift */; };
 		209482AD1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209482AC1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift */; };
 		209C906E1E2462780001FCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C906D1E2462780001FCDB /* AppDelegate.swift */; };
@@ -30,6 +32,8 @@
 		2061295B1E2690D70024A1F6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		2061295D1E2692760024A1F6 /* CoffeeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeEvent.swift; sourceTree = "<group>"; };
 		2061295F1E2730F80024A1F6 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		206129631E285ABD0024A1F6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		206129651E2879C70024A1F6 /* filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter@2x.png"; sourceTree = "<group>"; };
 		209482AA1E257991005FEFA4 /* CoffeeLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeLocation.swift; sourceTree = "<group>"; };
 		209482AC1E257BCC005FEFA4 /* ViewControllerMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMapViewExtension.swift; sourceTree = "<group>"; };
 		209C906A1E2462780001FCDB /* Cortado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cortado.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,7 @@
 		206129581E26907A0024A1F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				206129631E285ABD0024A1F6 /* SearchViewController.swift */,
 				209C906F1E2462780001FCDB /* ViewController.swift */,
 			);
 			name = Controller;
@@ -86,6 +91,7 @@
 		206129591E2690880024A1F6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				206129651E2879C70024A1F6 /* filter@2x.png */,
 				206129541E268EE50024A1F6 /* coffee-cup@2x.png */,
 				209C90851E2464590001FCDB /* lato-regular.ttf */,
 				209C90831E2464330001FCDB /* nevis.ttf */,
@@ -196,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206129661E2879C70024A1F6 /* filter@2x.png in Resources */,
 				209C90881E2476390001FCDB /* alex-tsu@2x.jpg in Resources */,
 				209C90781E2462780001FCDB /* LaunchScreen.storyboard in Resources */,
 				209C90751E2462780001FCDB /* Assets.xcassets in Resources */,
@@ -213,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206129641E285ABD0024A1F6 /* SearchViewController.swift in Sources */,
 				209482AB1E257991005FEFA4 /* CoffeeLocation.swift in Sources */,
 				20A6614C1E25CA2300BEBCE1 /* AttendeePhotoView.swift in Sources */,
 				209C90701E2462780001FCDB /* ViewController.swift in Sources */,

@@ -62,7 +62,6 @@ class ViewController: UIViewController {
         signUp.backgroundColor = UIColor.white
         attendeesLabel.textColor = cortadoNavy
         
-        
         navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "nevis", size: 16)!,  NSForegroundColorAttributeName :cortadoNavy]
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
